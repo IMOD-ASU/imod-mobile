@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0026011E9326A1002D2241 /* ImodLearningObjectivesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0026001E9326A1002D2241 /* ImodLearningObjectivesTableViewController.swift */; };
+		3D0026031E93275B002D2241 /* ImodLearningObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0026021E93275B002D2241 /* ImodLearningObjective.swift */; };
+		3D0026051E93283E002D2241 /* ImodObjectivePerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0026041E93283E002D2241 /* ImodObjectivePerformance.swift */; };
+		3D0026071E932852002D2241 /* ImodObjectiveCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0026061E932852002D2241 /* ImodObjectiveCondition.swift */; };
+		3D0026091E932875002D2241 /* ImodObjectiveCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0026081E932875002D2241 /* ImodObjectiveCriteria.swift */; };
+		3D00260B1E9377F3002D2241 /* ImodLearningObjectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00260A1E9377F3002D2241 /* ImodLearningObjectiveViewController.swift */; };
+		3D086D431E7FA63600552022 /* MenuOptionNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D086D421E7FA63600552022 /* MenuOptionNames.swift */; };
+		3D267E221E8A411B00D87809 /* ImodInstructorsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D267E211E8A411B00D87809 /* ImodInstructorsTableTableViewController.swift */; };
+		3D340D6A1EAED92B00EC2E4A /* ImodLoginUserHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D340D691EAED92B00EC2E4A /* ImodLoginUserHolder.swift */; };
+		3D340D6C1EB1AA8E00EC2E4A /* ImodTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D340D6B1EB1AA8E00EC2E4A /* ImodTableViewHelper.swift */; };
+		3D340D6E1EB1E80900EC2E4A /* ImodRepeatsOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D340D6D1EB1E80900EC2E4A /* ImodRepeatsOnViewController.swift */; };
+		3D5B7E441E973AAF002B8B2B /* ImodPerformanceLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B7E431E973AAF002B8B2B /* ImodPerformanceLogic.swift */; };
+		3D6A510E1E6FAAEC00D543A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A510D1E6FAAEC00D543A3 /* AppDelegate.swift */; };
+		3D6A51101E6FAAEC00D543A3 /* ImodsLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A510F1E6FAAEC00D543A3 /* ImodsLoginViewController.swift */; };
+		3D6A51131E6FAAEC00D543A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A51111E6FAAEC00D543A3 /* Main.storyboard */; };
+		3D6A51161E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A51141E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodeld */; };
+		3D6A51181E6FAAEC00D543A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A51171E6FAAEC00D543A3 /* Assets.xcassets */; };
+		3D6A511B1E6FAAEC00D543A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A51191E6FAAEC00D543A3 /* LaunchScreen.storyboard */; };
+		3D6A51281E715E6600D543A3 /* ImodsMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A51271E715E6600D543A3 /* ImodsMasterViewController.swift */; };
+		3D6A512B1E71694000D543A3 /* ImodCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A512A1E71694000D543A3 /* ImodCourse.swift */; };
+		3D6A512D1E717D4600D543A3 /* SInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6A512C1E717D4600D543A3 /* SInstructor.swift */; };
+		3D785C1E1E785EE300761519 /* ImodCourseDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C1D1E785EE300761519 /* ImodCourseDescriptionViewController.swift */; };
+		3D785C201E78697C00761519 /* ImodScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C1F1E78697C00761519 /* ImodScheduleViewController.swift */; };
+		3D785C221E7869C500761519 /* ImodInstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C211E7869C500761519 /* ImodInstructorViewController.swift */; };
+		3D785C241E7869E100761519 /* ImodCoursePolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C231E7869E100761519 /* ImodCoursePolicyViewController.swift */; };
+		3D785C281E7875B800761519 /* ImodPerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C271E7875B800761519 /* ImodPerformanceViewController.swift */; };
+		3D785C2C1E7875F800761519 /* ImodConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C2B1E7875F800761519 /* ImodConditionViewController.swift */; };
+		3D785C2E1E78761800761519 /* ImodCriteriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D785C2D1E78761800761519 /* ImodCriteriaViewController.swift */; };
+		3D875BA41EA9A6E3006AE6FE /* ImodProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D875BA31EA9A6E3006AE6FE /* ImodProfileTableViewController.swift */; };
+		3D875BA61EA9A822006AE6FE /* ImodProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D875BA51EA9A822006AE6FE /* ImodProfileViewController.swift */; };
+		3D875BA81EA9B3F2006AE6FE /* ImodUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D875BA71EA9B3F2006AE6FE /* ImodUser.swift */; };
+		3D8E30001E76594100228C26 /* ImodCourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E2FFF1E76594100228C26 /* ImodCourseDetailsViewController.swift */; };
+		3D9F18F71E9F6811007D5D25 /* ImodMainContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F18F61E9F6811007D5D25 /* ImodMainContentsTableViewController.swift */; };
+		3D9F18F91E9F69D9007D5D25 /* ImodMainContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F18F81E9F69D9007D5D25 /* ImodMainContentViewController.swift */; };
+		3D9F18FB1E9F6D31007D5D25 /* ImodKnowledgeDimensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F18FA1E9F6D31007D5D25 /* ImodKnowledgeDimensionViewController.swift */; };
+		3D9F18FD1E9F6EEE007D5D25 /* ImodPriorityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F18FC1E9F6EEE007D5D25 /* ImodPriorityViewController.swift */; };
+		3D9F18FF1E9F7039007D5D25 /* ImodResourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F18FE1E9F7039007D5D25 /* ImodResourcesTableViewController.swift */; };
+		3D9F19011E9F7143007D5D25 /* ImodResourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F19001E9F7143007D5D25 /* ImodResourceViewController.swift */; };
+		3D9F19031E9F7499007D5D25 /* ImodContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F19021E9F7499007D5D25 /* ImodContent.swift */; };
+		3D9F19051E9F7584007D5D25 /* ImodResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F19041E9F7584007D5D25 /* ImodResource.swift */; };
+		3D9F19071E9FB091007D5D25 /* ImodContentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F19061E9FB091007D5D25 /* ImodContentTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D0026001E9326A1002D2241 /* ImodLearningObjectivesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodLearningObjectivesTableViewController.swift; sourceTree = "<group>"; };
+		3D0026021E93275B002D2241 /* ImodLearningObjective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodLearningObjective.swift; sourceTree = "<group>"; };
+		3D0026041E93283E002D2241 /* ImodObjectivePerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodObjectivePerformance.swift; sourceTree = "<group>"; };
+		3D0026061E932852002D2241 /* ImodObjectiveCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodObjectiveCondition.swift; sourceTree = "<group>"; };
+		3D0026081E932875002D2241 /* ImodObjectiveCriteria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodObjectiveCriteria.swift; sourceTree = "<group>"; };
+		3D00260A1E9377F3002D2241 /* ImodLearningObjectiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodLearningObjectiveViewController.swift; sourceTree = "<group>"; };
+		3D086D421E7FA63600552022 /* MenuOptionNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionNames.swift; sourceTree = "<group>"; };
+		3D267E211E8A411B00D87809 /* ImodInstructorsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodInstructorsTableTableViewController.swift; sourceTree = "<group>"; };
+		3D340D691EAED92B00EC2E4A /* ImodLoginUserHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodLoginUserHolder.swift; sourceTree = "<group>"; };
+		3D340D6B1EB1AA8E00EC2E4A /* ImodTableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodTableViewHelper.swift; sourceTree = "<group>"; };
+		3D340D6D1EB1E80900EC2E4A /* ImodRepeatsOnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodRepeatsOnViewController.swift; sourceTree = "<group>"; };
+		3D5B7E431E973AAF002B8B2B /* ImodPerformanceLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodPerformanceLogic.swift; sourceTree = "<group>"; };
+		3D6A510A1E6FAAEC00D543A3 /* Imods Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imods Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6A510D1E6FAAEC00D543A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D6A510F1E6FAAEC00D543A3 /* ImodsLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImodsLoginViewController.swift; sourceTree = "<group>"; };
+		3D6A51121E6FAAEC00D543A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6A51151E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Imods_Mobile.xcdatamodel; sourceTree = "<group>"; };
+		3D6A51171E6FAAEC00D543A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D6A511A1E6FAAEC00D543A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D6A511C1E6FAAEC00D543A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6A51271E715E6600D543A3 /* ImodsMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodsMasterViewController.swift; sourceTree = "<group>"; };
+		3D6A512A1E71694000D543A3 /* ImodCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodCourse.swift; sourceTree = "<group>"; };
+		3D6A512C1E717D4600D543A3 /* SInstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SInstructor.swift; sourceTree = "<group>"; };
+		3D785C1D1E785EE300761519 /* ImodCourseDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodCourseDescriptionViewController.swift; sourceTree = "<group>"; };
+		3D785C1F1E78697C00761519 /* ImodScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodScheduleViewController.swift; sourceTree = "<group>"; };
+		3D785C211E7869C500761519 /* ImodInstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodInstructorViewController.swift; sourceTree = "<group>"; };
+		3D785C231E7869E100761519 /* ImodCoursePolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodCoursePolicyViewController.swift; sourceTree = "<group>"; };
+		3D785C271E7875B800761519 /* ImodPerformanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodPerformanceViewController.swift; sourceTree = "<group>"; };
+		3D785C2B1E7875F800761519 /* ImodConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodConditionViewController.swift; sourceTree = "<group>"; };
+		3D785C2D1E78761800761519 /* ImodCriteriaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodCriteriaViewController.swift; sourceTree = "<group>"; };
+		3D875BA31EA9A6E3006AE6FE /* ImodProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodProfileTableViewController.swift; sourceTree = "<group>"; };
+		3D875BA51EA9A822006AE6FE /* ImodProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodProfileViewController.swift; sourceTree = "<group>"; };
+		3D875BA71EA9B3F2006AE6FE /* ImodUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodUser.swift; sourceTree = "<group>"; };
+		3D8E2FFF1E76594100228C26 /* ImodCourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodCourseDetailsViewController.swift; sourceTree = "<group>"; };
+		3D9F18F61E9F6811007D5D25 /* ImodMainContentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodMainContentsTableViewController.swift; sourceTree = "<group>"; };
+		3D9F18F81E9F69D9007D5D25 /* ImodMainContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodMainContentViewController.swift; sourceTree = "<group>"; };
+		3D9F18FA1E9F6D31007D5D25 /* ImodKnowledgeDimensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodKnowledgeDimensionViewController.swift; sourceTree = "<group>"; };
+		3D9F18FC1E9F6EEE007D5D25 /* ImodPriorityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodPriorityViewController.swift; sourceTree = "<group>"; };
+		3D9F18FE1E9F7039007D5D25 /* ImodResourcesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodResourcesTableViewController.swift; sourceTree = "<group>"; };
+		3D9F19001E9F7143007D5D25 /* ImodResourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodResourceViewController.swift; sourceTree = "<group>"; };
+		3D9F19021E9F7499007D5D25 /* ImodContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodContent.swift; sourceTree = "<group>"; };
+		3D9F19041E9F7584007D5D25 /* ImodResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodResource.swift; sourceTree = "<group>"; };
+		3D9F19061E9FB091007D5D25 /* ImodContentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImodContentTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6A51071E6FAAEC00D543A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D340D681EADBDD400EC2E4A /* Model Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3D340D691EAED92B00EC2E4A /* ImodLoginUserHolder.swift */,
+			);
+			name = "Model Managers";
+			sourceTree = "<group>";
+		};
+		3D6A51011E6FAAEC00D543A3 = {
+			isa = PBXGroup;
+			children = (
+				3D6A510C1E6FAAEC00D543A3 /* Imods Mobile */,
+				3D6A510B1E6FAAEC00D543A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6A510B1E6FAAEC00D543A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A510A1E6FAAEC00D543A3 /* Imods Mobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6A510C1E6FAAEC00D543A3 /* Imods Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A51291E71691800D543A3 /* Models */,
+				3D340D681EADBDD400EC2E4A /* Model Managers */,
+				3D6A51221E6FF5BA00D543A3 /* ViewControllers */,
+				3D6A510D1E6FAAEC00D543A3 /* AppDelegate.swift */,
+				3D6A51111E6FAAEC00D543A3 /* Main.storyboard */,
+				3D6A51171E6FAAEC00D543A3 /* Assets.xcassets */,
+				3D6A51191E6FAAEC00D543A3 /* LaunchScreen.storyboard */,
+				3D6A511C1E6FAAEC00D543A3 /* Info.plist */,
+				3D6A51141E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodeld */,
+			);
+			path = "Imods Mobile";
+			sourceTree = "<group>";
+		};
+		3D6A51221E6FF5BA00D543A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D6A510F1E6FAAEC00D543A3 /* ImodsLoginViewController.swift */,
+				3D6A51271E715E6600D543A3 /* ImodsMasterViewController.swift */,
+				3D875BA31EA9A6E3006AE6FE /* ImodProfileTableViewController.swift */,
+				3D875BA51EA9A822006AE6FE /* ImodProfileViewController.swift */,
+				3D8E2FFF1E76594100228C26 /* ImodCourseDetailsViewController.swift */,
+				3D785C1D1E785EE300761519 /* ImodCourseDescriptionViewController.swift */,
+				3D785C1F1E78697C00761519 /* ImodScheduleViewController.swift */,
+				3D340D6D1EB1E80900EC2E4A /* ImodRepeatsOnViewController.swift */,
+				3D785C231E7869E100761519 /* ImodCoursePolicyViewController.swift */,
+				3D267E211E8A411B00D87809 /* ImodInstructorsTableTableViewController.swift */,
+				3D785C211E7869C500761519 /* ImodInstructorViewController.swift */,
+				3D0026001E9326A1002D2241 /* ImodLearningObjectivesTableViewController.swift */,
+				3D00260A1E9377F3002D2241 /* ImodLearningObjectiveViewController.swift */,
+				3D785C271E7875B800761519 /* ImodPerformanceViewController.swift */,
+				3D785C2B1E7875F800761519 /* ImodConditionViewController.swift */,
+				3D785C2D1E78761800761519 /* ImodCriteriaViewController.swift */,
+				3D9F19061E9FB091007D5D25 /* ImodContentTableViewController.swift */,
+				3D9F18F61E9F6811007D5D25 /* ImodMainContentsTableViewController.swift */,
+				3D9F18F81E9F69D9007D5D25 /* ImodMainContentViewController.swift */,
+				3D9F18FA1E9F6D31007D5D25 /* ImodKnowledgeDimensionViewController.swift */,
+				3D9F18FC1E9F6EEE007D5D25 /* ImodPriorityViewController.swift */,
+				3D9F18FE1E9F7039007D5D25 /* ImodResourcesTableViewController.swift */,
+				3D9F19001E9F7143007D5D25 /* ImodResourceViewController.swift */,
+				3D340D6B1EB1AA8E00EC2E4A /* ImodTableViewHelper.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D6A51291E71691800D543A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D875BA71EA9B3F2006AE6FE /* ImodUser.swift */,
+				3D6A512A1E71694000D543A3 /* ImodCourse.swift */,
+				3D6A512C1E717D4600D543A3 /* SInstructor.swift */,
+				3D086D421E7FA63600552022 /* MenuOptionNames.swift */,
+				3D0026021E93275B002D2241 /* ImodLearningObjective.swift */,
+				3D0026041E93283E002D2241 /* ImodObjectivePerformance.swift */,
+				3D0026061E932852002D2241 /* ImodObjectiveCondition.swift */,
+				3D0026081E932875002D2241 /* ImodObjectiveCriteria.swift */,
+				3D5B7E431E973AAF002B8B2B /* ImodPerformanceLogic.swift */,
+				3D9F19021E9F7499007D5D25 /* ImodContent.swift */,
+				3D9F19041E9F7584007D5D25 /* ImodResource.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6A51091E6FAAEC00D543A3 /* Imods Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6A511F1E6FAAEC00D543A3 /* Build configuration list for PBXNativeTarget "Imods Mobile" */;
+			buildPhases = (
+				3D6A51061E6FAAEC00D543A3 /* Sources */,
+				3D6A51071E6FAAEC00D543A3 /* Frameworks */,
+				3D6A51081E6FAAEC00D543A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imods Mobile";
+			productName = "Imods Mobile";
+			productReference = 3D6A510A1E6FAAEC00D543A3 /* Imods Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6A51021E6FAAEC00D543A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sohan Madhav Bangaru";
+				TargetAttributes = {
+					3D6A51091E6FAAEC00D543A3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 24D2YQZ4T9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3D6A51051E6FAAEC00D543A3 /* Build configuration list for PBXProject "Imods Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D6A51011E6FAAEC00D543A3;
+			productRefGroup = 3D6A510B1E6FAAEC00D543A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6A51091E6FAAEC00D543A3 /* Imods Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6A51081E6FAAEC00D543A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6A511B1E6FAAEC00D543A3 /* LaunchScreen.storyboard in Resources */,
+				3D6A51181E6FAAEC00D543A3 /* Assets.xcassets in Resources */,
+				3D6A51131E6FAAEC00D543A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6A51061E6FAAEC00D543A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0026071E932852002D2241 /* ImodObjectiveCondition.swift in Sources */,
+				3D785C221E7869C500761519 /* ImodInstructorViewController.swift in Sources */,
+				3D785C2C1E7875F800761519 /* ImodConditionViewController.swift in Sources */,
+				3D9F18F71E9F6811007D5D25 /* ImodMainContentsTableViewController.swift in Sources */,
+				3D0026011E9326A1002D2241 /* ImodLearningObjectivesTableViewController.swift in Sources */,
+				3D6A51161E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodeld in Sources */,
+				3D875BA41EA9A6E3006AE6FE /* ImodProfileTableViewController.swift in Sources */,
+				3D875BA61EA9A822006AE6FE /* ImodProfileViewController.swift in Sources */,
+				3D875BA81EA9B3F2006AE6FE /* ImodUser.swift in Sources */,
+				3D267E221E8A411B00D87809 /* ImodInstructorsTableTableViewController.swift in Sources */,
+				3D785C241E7869E100761519 /* ImodCoursePolicyViewController.swift in Sources */,
+				3D00260B1E9377F3002D2241 /* ImodLearningObjectiveViewController.swift in Sources */,
+				3D785C201E78697C00761519 /* ImodScheduleViewController.swift in Sources */,
+				3D9F19071E9FB091007D5D25 /* ImodContentTableViewController.swift in Sources */,
+				3D340D6E1EB1E80900EC2E4A /* ImodRepeatsOnViewController.swift in Sources */,
+				3D9F19011E9F7143007D5D25 /* ImodResourceViewController.swift in Sources */,
+				3D9F18FB1E9F6D31007D5D25 /* ImodKnowledgeDimensionViewController.swift in Sources */,
+				3D785C1E1E785EE300761519 /* ImodCourseDescriptionViewController.swift in Sources */,
+				3D340D6A1EAED92B00EC2E4A /* ImodLoginUserHolder.swift in Sources */,
+				3D6A51281E715E6600D543A3 /* ImodsMasterViewController.swift in Sources */,
+				3D0026031E93275B002D2241 /* ImodLearningObjective.swift in Sources */,
+				3D5B7E441E973AAF002B8B2B /* ImodPerformanceLogic.swift in Sources */,
+				3D785C281E7875B800761519 /* ImodPerformanceViewController.swift in Sources */,
+				3D0026051E93283E002D2241 /* ImodObjectivePerformance.swift in Sources */,
+				3D9F19031E9F7499007D5D25 /* ImodContent.swift in Sources */,
+				3D086D431E7FA63600552022 /* MenuOptionNames.swift in Sources */,
+				3D9F18FD1E9F6EEE007D5D25 /* ImodPriorityViewController.swift in Sources */,
+				3D6A51101E6FAAEC00D543A3 /* ImodsLoginViewController.swift in Sources */,
+				3D6A512B1E71694000D543A3 /* ImodCourse.swift in Sources */,
+				3D8E30001E76594100228C26 /* ImodCourseDetailsViewController.swift in Sources */,
+				3D785C2E1E78761800761519 /* ImodCriteriaViewController.swift in Sources */,
+				3D9F18F91E9F69D9007D5D25 /* ImodMainContentViewController.swift in Sources */,
+				3D340D6C1EB1AA8E00EC2E4A /* ImodTableViewHelper.swift in Sources */,
+				3D6A512D1E717D4600D543A3 /* SInstructor.swift in Sources */,
+				3D9F18FF1E9F7039007D5D25 /* ImodResourcesTableViewController.swift in Sources */,
+				3D0026091E932875002D2241 /* ImodObjectiveCriteria.swift in Sources */,
+				3D9F19051E9F7584007D5D25 /* ImodResource.swift in Sources */,
+				3D6A510E1E6FAAEC00D543A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D6A51111E6FAAEC00D543A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6A51121E6FAAEC00D543A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6A51191E6FAAEC00D543A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6A511A1E6FAAEC00D543A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D6A511D1E6FAAEC00D543A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3D6A511E1E6FAAEC00D543A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D6A51201E6FAAEC00D543A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24D2YQZ4T9;
+				INFOPLIST_FILE = "Imods Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.asu.msse.smbangar.Imods-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3D6A51211E6FAAEC00D543A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24D2YQZ4T9;
+				INFOPLIST_FILE = "Imods Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.asu.msse.smbangar.Imods-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6A51051E6FAAEC00D543A3 /* Build configuration list for PBXProject "Imods Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6A511D1E6FAAEC00D543A3 /* Debug */,
+				3D6A511E1E6FAAEC00D543A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6A511F1E6FAAEC00D543A3 /* Build configuration list for PBXNativeTarget "Imods Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6A51201E6FAAEC00D543A3 /* Debug */,
+				3D6A51211E6FAAEC00D543A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D6A51141E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D6A51151E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodel */,
+			);
+			currentVersion = 3D6A51151E6FAAEC00D543A3 /* Imods_Mobile.xcdatamodel */;
+			path = Imods_Mobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D6A51021E6FAAEC00D543A3 /* Project object */;
+}

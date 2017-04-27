@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Condition" representedClassName="Condition" syncable="YES" codeGenerationType="class">
+        <attribute name="condition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conditionType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hideFromStudents" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Content" representedClassName="Content" syncable="YES" codeGenerationType="class">
+        <attribute name="contentTopic" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CourseDescription" representedClassName="CourseDescription" syncable="YES" codeGenerationType="class">
+        <attribute name="audience" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creditHours" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfSeats" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subjectArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeRatio" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CourseDetails" representedClassName="CourseDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="classroomLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="semester" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CourseOverview" representedClassName="CourseOverview" syncable="YES" codeGenerationType="class">
+        <attribute name="profileName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasCourseDescription" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseDescription" syncable="YES"/>
+        <relationship name="hasCourseDetails" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseDetails" syncable="YES"/>
+        <relationship name="hasCoursePolicy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoursePolicy" syncable="YES"/>
+        <relationship name="hasInstructors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Instructor" syncable="YES"/>
+        <relationship name="hasLearningObjective" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LearningObjective" syncable="YES"/>
+        <relationship name="hasMainContents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MainContent" syncable="YES"/>
+        <relationship name="hasSchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedule" syncable="YES"/>
+    </entity>
+    <entity name="CoursePolicy" representedClassName="CoursePolicy" syncable="YES" codeGenerationType="class">
+        <attribute name="attendanceAndTardiness" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classParticipation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gradingProcedure" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="missedAssignments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="missedOrMakeUpExams" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="professionalConduct" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Criteria" representedClassName="Criteria" syncable="YES" codeGenerationType="class">
+        <attribute name="accuracy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enableAccuracy" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="enableQuality" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="enableQuantity" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="enableSpeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hideAccuracy" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hideQuality" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hideQuantity" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hideSpeed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Instructor" representedClassName="Instructor" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeHours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="officeLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="webPage" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="KnowledgeDimensions" representedClassName="KnowledgeDimensions" syncable="YES" codeGenerationType="class">
+        <attribute name="knowledgeDimension" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LearningObjective" representedClassName="LearningObjective" syncable="YES" codeGenerationType="class">
+        <attribute name="conditionString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="criteriaString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objective" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="performanceString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasCondition" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Condition" syncable="YES"/>
+        <relationship name="hasContent" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Content" syncable="YES"/>
+        <relationship name="hasCriteria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Criteria" syncable="YES"/>
+        <relationship name="hasPerformance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Performance" syncable="YES"/>
+    </entity>
+    <entity name="MainContent" representedClassName="MainContent" syncable="YES" codeGenerationType="class">
+        <attribute name="preReq" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasKnowledgeDimensions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KnowledgeDimensions" syncable="YES"/>
+        <relationship name="hasResources" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Resources" syncable="YES"/>
+    </entity>
+    <entity name="Performance" representedClassName="Performance" syncable="YES" codeGenerationType="class">
+        <attribute name="actionCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actionWord" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="domainCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="learningDomain" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Resources" representedClassName="Resources" syncable="YES" codeGenerationType="class">
+        <attribute name="resourceDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resourceType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Schedule" representedClassName="Schedule" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="repeats" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="repeatsEvery" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="hasRepeatsOn" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduleRepeatsOn" syncable="YES"/>
+    </entity>
+    <entity name="ScheduleRepeatsOn" representedClassName="ScheduleRepeatsOn" syncable="YES" codeGenerationType="class">
+        <attribute name="repeatsOn" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasProfiles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CourseOverview" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Condition" positionX="511" positionY="162" width="128" height="90"/>
+        <element name="Content" positionX="511" positionY="387" width="128" height="60"/>
+        <element name="CourseDescription" positionX="-117" positionY="-81" width="128" height="135"/>
+        <element name="CourseDetails" positionX="-299" positionY="-81" width="128" height="120"/>
+        <element name="CourseOverview" positionX="-18" positionY="117" width="128" height="163"/>
+        <element name="CoursePolicy" positionX="243" positionY="-81" width="128" height="135"/>
+        <element name="Criteria" positionX="513" positionY="-81" width="128" height="223"/>
+        <element name="Instructor" positionX="-452" positionY="-87" width="128" height="150"/>
+        <element name="KnowledgeDimensions" positionX="90" positionY="468" width="128" height="60"/>
+        <element name="LearningObjective" positionX="333" positionY="126" width="128" height="178"/>
+        <element name="MainContent" positionX="196" positionY="309" width="128" height="118"/>
+        <element name="Performance" positionX="511" positionY="270" width="128" height="105"/>
+        <element name="Resources" positionX="241" positionY="468" width="128" height="88"/>
+        <element name="Schedule" positionX="54" positionY="-81" width="128" height="120"/>
+        <element name="User" positionX="-297" positionY="315" width="128" height="88"/>
+        <element name="ScheduleRepeatsOn" positionX="-243" positionY="63" width="128" height="60"/>
+    </elements>
+</model>
