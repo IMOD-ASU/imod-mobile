@@ -51,13 +51,22 @@ class ImodLoginUserHolder {
         }
         
         // Identify the whether the user is present or not.
+        var newUser : ImodUser? = nil
         if (iUserResult?.count)! > 0 {
-            var newUser = ImodUser(managedObject: iUserResult?[0])
-            self.iUser = newUser
+            newUser = ImodUser(managedObject: iUserResult?[0])
         } else {
-            var newUser = ImodUser(username: username, password: password)
-            self.iUser = newUser
+            newUser = ImodUser(username: username, password: password)
+            
+            // Add the User Object to Core Data
+            let userEntity = NSEntityDescription.entity(forEntityName: "User", in: managedObjectContext!)
+            let userDB = NSManagedObject(entity: userEntity!, insertInto: managedObjectContext!)
+            userDB.setValue(username, forKey: "username")
+            userDB.setValue(password, forKey: "password")
+            
+            // Save the User to Core Data
+            self.saveDB()
         }
+            self.iUser = newUser
     }
     
     // MARK: - Model Public Methods
